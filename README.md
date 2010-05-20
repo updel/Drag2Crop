@@ -7,7 +7,7 @@ This small mootools plugin to drag picture inside a small box to get a thumbnail
 
 ### Demo
 
-[http://updel.com/demos/drag2crop/screen.png](http://updel.com/demos/drag2crop/screen.png)
+[http://updel.com/demos/drag2crop/](http://updel.com/demos/drag2crop/)
 
 How to use
 ----------
