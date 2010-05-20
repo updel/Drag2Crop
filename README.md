@@ -16,12 +16,12 @@ How to use
 
 * [MooTools More 1.2.4](http://mootools.net/more): Drag.* (and its dependencies)
 
-- An element parent where the image is shild and have a fix With and height and Overflow:hidden
+- An element parent where the picture shoud be shild, this element(div) must have a fixed With/height and Overflow:hidden
 
 	#JS
 		new Drag2Crop('pictureId', {
 			setOptions	:    {
-				relative 	: 	'relative'
+				relative 	: 	'relative' // Box id
 			},
 			onStart		:    function(){
 				this.picture.setStyles({opacity:0.5});
