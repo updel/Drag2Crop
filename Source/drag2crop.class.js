@@ -3,20 +3,20 @@
 description: Drag picture inside a small box to get a thumbnail showing the good part of the picture.
 
 license: 
-	- MIT-style
+  MIT-style
 
 authors:
-	- Abdelkader ELKALIDI (http://updel.com)
+  Abdelkader ELKALIDI (http://updel.com)
 
 requires:
-	- core/1.2.4:   '*'
-	- more/1.2.4: 'Drag.*'
+  core/1.2.4:   '*'
+  more/1.2.4: 'Drag.*'
 
 provides:
-	- Drag2Crop
+  Drag2Crop
   
 version:
-	- 0.31
+  0.31
 ...
 */
 var Drag2Crop = new Class({
