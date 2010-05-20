@@ -14,12 +14,12 @@ window.addEvent('load', function(){
         setOptions	:    {
 			relative 	: 	'relative'
 		},
-        onSnap		:    function(){
+        onStart		:    function(){
             this.picture.setStyles({opacity:0.5});
         },
         onDone      :    function(top,left){
             this.picture.setStyles({opacity:1});
-			$('test').set('text', 'Top : '+top+' | Left : '+left);
+			$('test').set('text', 'Top : ' + top + ' | Left : ' + left);
         }
     });
 });
@@ -34,7 +34,7 @@ window.addEvent('load', function(){
 }
 /* Div to Test */
 #test {
-	width		:	150px;
+	width		:	250px;
 	text-align	:	center;
 	padding		:	3px;
 	border		:	1px solid #E8E68A;
