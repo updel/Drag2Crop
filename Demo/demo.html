@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"  />
+<title>Thumbnail Drag then Crop using mootools like facebook</title>
+<meta name="robots" content="follow, all" />
+<script src="core/mootools-1.2.4-core-yc.js" type="text/javascript"></script>
+<script src="core/drag.plugin.js" type="text/javascript"></script>
+<script src="../Source/drag2crop.class.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.addEvent('load', function(){
+	new Drag2Crop('pictureId', {
+        setOptions	:    {
+			relative 	: 	'relative'
+		},
+        onSnap		:    function(){
+            this.picture.setStyles({opacity:0.5});
+        },
+        onDone      :    function(top,left){
+            this.picture.setStyles({opacity:1});
+			$('test').set('text', 'Top : '+top+' | Left : '+left);
+        }
+    });
+});
+</script>
+<style type="text/css">
+#relative {
+	height		:	100px;
+	width		:	100px;
+	overflow	:	hidden;
+	margin		:	0 auto;
+	position	:	relative;
+}
+/* Div to Test */
+#test {
+	width		:	150px;
+	text-align	:	center;
+	padding		:	3px;
+	border		:	1px solid #E8E68A;
+	background	:	#FFFFCC;
+	margin		:	5px auto 0;
+	font-family	:	verdana;
+	font-size	:	11px;
+}
+</style>
+</head>
+<body>
+	<div id="relative"><img id="pictureId" src="images/dragtocrop.jpg"  /></div>
+	<div id="test"></div>
+</body>
+</html>
