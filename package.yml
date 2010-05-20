@@ -1,7 +1,7 @@
-name:  Drag2Crop
-author:  updel
-category:  Widgets
-tags:  [crop,drag,events,facebook]
-docs:  http://updel.com/drag2crop
-demo:  http://updel.com/demos/drag2crop
-current:  1.0
+name: Drag2Crop
+author: updel
+category: Widgets
+tags: [crop,drag,events,facebook]
+docs: http://updel.com/drag2crop
+demo: http://updel.com/demos/drag2crop
+current: 0.3
