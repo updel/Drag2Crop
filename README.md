@@ -1,7 +1,7 @@
 Drag2Crop
 ===========
 
-This small mootools plugin to drag picture inside a small box to get a thumbnail showing the good part of the picture, then return values [Top, Left] of picture relative to the box.
+This small mootools plugin to drag picture inside a small box to get a thumbnail showing the good part of the picture, then return values [Top, Left, Width, Height] of picture relative to the box (Like facebook).
 
 ![Screenshot](http://updel.com/demos/drag2crop/screen.png)
 
