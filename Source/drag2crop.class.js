@@ -16,7 +16,7 @@ provides:
   Drag2Crop
   
 version:
-  0.31
+  0.3
 ...
 */
 var Drag2Crop = new Class({
