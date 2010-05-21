@@ -46,8 +46,8 @@ var Drag2Crop = new Class({
 		this.getSize		=	this.relative.getSize();
         this.width  		=   this.relative.getSize().x.toInt();
         this.height  		=   this.relative.getSize().y.toInt();
-        this.left  			=   this.getCoordinates.x.toInt();
-        this.top    		=   this.getCoordinates.y.toInt();
+        this.left  			=   -this.getCoordinates.x.toInt();
+        this.top    		=   -this.getCoordinates.y.toInt();
     },
 	complete    :    function(){
 		this.coordinates();
