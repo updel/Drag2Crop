@@ -11,9 +11,9 @@
 <script type="text/javascript">
 window.addEvent('load', function(){
 	new Drag2Crop('pictureId', {
-        setOptions	:    {
-			relative 	: 	'relative'
-		},
+		relative 	: 	'relative',
+		top			:	-30, // Start at top : -30 
+		left		:	-60, // Start at left : -60 
         onStart		:    function(){
             this.picture.setStyles({opacity:0.5});
         },

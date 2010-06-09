@@ -16,7 +16,7 @@ provides:
   Drag2Crop
   
 version:
-  0.3
+  0.4
 ...
 */
 var Drag2Crop = new Class({
@@ -28,13 +28,15 @@ var Drag2Crop = new Class({
             modifiers   :    { x: 'scrollLeft', y: 'scrollTop' },
             style       :    false,
             invert      :    true,
+            top  		:    0,
+            left		:    0,
             onComplete  :    this.complete.bind(this),
             debug       :    false
         }, options);
-		this.top        =     0;
-        this.left       =     0;
+		this.top        =     this.options.top.toInt();
+        this.left       =     this.options.left.toInt();
         this.picture    =     $(picture);
-        this.relative   =     $(this.options.relative).setStyles({cursor:'move'});
+        this.relative   =     $(this.options.relative).setStyles({cursor:'move'}).scrollTo(-this.top, -this.left);
         this.parent(this.relative);
 		this.__construct();
     },
