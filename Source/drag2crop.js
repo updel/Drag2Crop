@@ -36,7 +36,7 @@ var Drag2Crop = new Class({
 		this.top        =     this.options.top.toInt();
         this.left       =     this.options.left.toInt();
         this.picture    =     $(picture);
-        this.relative   =     $(this.options.relative).setStyles({cursor:'move'}).scrollTo(-this.top, -this.left);
+        this.relative   =     $(this.options.relative).setStyles({cursor:'move'}).scrollTo(-this.left, -this.top);
         this.parent(this.relative);
 		this.__construct();
     },
